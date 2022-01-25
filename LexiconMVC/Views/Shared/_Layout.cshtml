@@ -1,114 +1,107 @@
 ﻿<!DOCTYPE html>
 
-<html>
+<html lang="en" class="h-100">
 <head>
-    <meta name="viewport" content="width=device-width" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Johan Ivarsson" />
+    <meta name="description" content="Lexicon MVC - training excersise" />
+    <meta name="keywords" content="HTML, CSS, Lexicon" />
     <title>@ViewBag.Title</title>
     <link href="~/css/Style.css" rel="stylesheet" />
 </head>
-<body class="h-100">
-    <div class="container-fluid">
-        <!-- Main Nav -->
-        <div class="row bg-dark">
-            <div class="col">
-                <header>
-                    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-2 bg-dark"
-                         id="navigation">
-                        <button class="navbar-toggler"
-                                style="border: none; padding-left: 1rem"
-                                type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#navbarColor02"
-                                aria-controls="navbarColor02"
-                                aria-expanded="false"
-                                aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
 
-                        <div class="text-center" id="logoText">
-                            <hr />
-                            <img class="m-0 ms-lg-3 pt-1"
-                                 src="./icons/kerberos-32x32.png"
-                                 alt=""
-                                 height="32"
-                                 width="32"
-                                 style="vertical-align: top" />
+    <body class="d-flex flex-column h-100">
 
-                            <span class="text-center etched-text text-muted ms-lg-3">Paws of the world</span>
-                        </div>
+        <header>
+            <!-- Fixed navbar -->
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <div class="container-fluid">
+                    <img class="m-0 ms-lg-3 pt-1"
+                         src="../icons/kerberos-32x32.png"
+                         alt=""
+                         height="32"
+                         width="32"
+                          />
+                    <a class="navbar-brand ps-2" href="#">Projects</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <hr class="d-lg-none" />
+                                <a class="nav-link active" href="#">
+                                    Home
+                                    <span class="visually-hidden">(current)</span>
+                                </a>
+                            </li>
 
-                        <div class="collapse navbar-collapse navbar-wrap"
-                             id="navbarColor02">
-                            <ul class="navbar-nav ms-auto">
-                                <li class="nav-item">
-                                    <hr class="d-lg-none" />
-                                    <a class="nav-link active" href="#">
-                                        Home
-                                        <span class="visually-hidden">(current)</span>
-                                    </a>
-                                </li>
+                            <li class="nav-item">
+                                <hr class="d-lg-none" />
+                                <a class="nav-link" href="#content">Articles</a>
+                            </li>
 
-                                <li class="nav-item">
-                                    <hr class="d-lg-none" />
-                                    <a class="nav-link" href="#content">Articles</a>
-                                </li>
+                            <li class="nav-item">
+                                <hr class="d-lg-none" />
+                                <a class="nav-link" href="#contacts">Contact</a>
+                            </li>
 
-                                <li class="nav-item">
-                                    <hr class="d-lg-none" />
-                                    <a class="nav-link" href="#contacts">Contact</a>
-                                </li>
+                            <li class="nav-item" id="socialMediaIcons">
+                                <hr class="d-lg-none" />
+                                <a class="d-inline-block sm-icons"
+                                   href="https://www.linkedin.com/in/johan-ivarsson-b1915b92/">
+                                    <img src="~/lib/bootstrap/icons/linkedin.svg"
+                                         alt=""
+                                         height="20"
+                                         width="20" />
+                                </a>
 
-                                <li class="nav-item" id="socialMediaIcons">
-                                    <hr class="d-lg-none" />
-                                    <a class="d-inline-block sm-icons"
-                                       href="https://www.linkedin.com/in/johan-ivarsson-b1915b92/">
-                                        <img src="./node_modules/bootstrap-icons/icons/linkedin.svg"
-                                             alt=""
-                                             height="20"
-                                             width="20" />
-                                    </a>
+                                <a class="d-inline-block sm-icons"
+                                   href="https://twitter.com/Vingnir3">
+                                    <img class=""
+                                         src="~/lib/bootstrap/icons/twitter.svg"
+                                         alt=""
+                                         height="20"
+                                         width="20" />
+                                </a>
 
-                                    <a class="d-inline-block sm-icons"
-                                       href="https://twitter.com/Vingnir3">
-                                        <img class=""
-                                             src="./node_modules/bootstrap-icons/icons/twitter.svg"
-                                             alt=""
-                                             height="20"
-                                             width="20" />
-                                    </a>
+                                <a class="d-inline-block sm-icons"
+                                   href="https://github.com/vingnir">
+                                    <img src="~/lib/bootstrap/icons/github.svg"
+                                         alt=""
+                                         height="20"
+                                         width="20" />
+                                </a>
+                            </li>
+                        </ul>
 
-                                    <a class="d-inline-block sm-icons"
-                                       href="https://github.com/vingnir">
-                                        <img src="./node_modules/bootstrap-icons/icons/github.svg"
-                                             alt=""
-                                             height="20"
-                                             width="20" />
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </header>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Begin page content -->
+        <main class="flex-shrink-0">
+            <div class="container mx-1 p-2" id="content">
+                @RenderBody()
             </div>
-        </div>
-        <!-- End row Main Nav -->
+        </main>
+
+        <footer class="footer mt-auto py-3">
+            <div class="container text-center">
+                <span class="text-muted">
+                    Copyright&COPY; | Johan Ivarsson | All rights reserved
+                </span>
+            </div>
+        </footer>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 
 
 
-
-
-
-
-
-
-
-
-
-        <div>
-            @RenderBody()
-        </div>
-    </div> <!-- Container -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</body>
+    </body>
 </html>

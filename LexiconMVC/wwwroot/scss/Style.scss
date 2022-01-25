@@ -1,7 +1,13 @@
-﻿$primary: #00ffff;
-$white: white;
-@import "../lib/bootstrap/scss/bootstrap";
+// Override Bootstrap's Sass default variables
 
-nav.navbar {
-    background: linear-gradient($primary, $white)
-}
+// Place variable overrides first
+//Import custom variables
+
+@import "./customVariables";
+
+//Import custom theme
+@import "../lib/bootstrap/scss/bootstrap.scss";
+
+//Custom rules
+@import "./_custom.style.scss";
+

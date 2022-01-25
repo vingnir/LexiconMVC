@@ -1,0 +1,125 @@
+/*
+* Theme Name: Lexicon Frontend
+* Description: MVC training project
+* Author: Johan Ivarsson
+* Author URI: https://github.com/vingnir
+* Copyright 2022-01 Johan Ivarsson
+* Tags: Lexicon, CSS, SASS, Bootstrap
+* Based on Bootstrap
+***************************************
+* TABLE OF CONTENTS
+* HEADING -  Logo, navigation
+* FOOTER - Copyright
+***/
+
+/* ---------- Global ---------- */
+
+html,
+body {
+    height: 100%;
+}
+
+#page-content {
+    flex: 1 0 auto;
+}
+
+body {
+    padding-top: 54px;
+   
+}
+
+.navbar {
+    background-color: #55595c;
+}
+
+.etched-text {
+    text-shadow: 0 2px white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #b8bec5;
+}
+
+/* hide scrollbar but allow scrolling */
+body {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  //scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+/* ---------- End Global ---------- */
+
+
+/* ---------- Main Nav ---------- */
+
+
+
+.sm-icons {
+  padding: 0.5rem;
+}
+/* ---------- End Main Nav ---------- */
+
+/* ---------- Main #content ---------- */
+
+
+/* ---------- End Main #content ---------- */
+
+
+
+
+
+
+/* ---------- Footer ---------- */
+.footer-menu a {
+  color: #666;
+}
+
+#footerNav ul li {
+  margin-left: 0;
+  margin-right: 0 !important;
+  opacity: 70%;
+}
+
+.footer{
+    background-color:#f1f1f1;
+}
+
+.footer-copyright {
+  padding: 0.5rem 1rem;
+}
+/* ---------- End Footer ---------- */
+
+
+/* ---------- Responsive ---------- */
+
+@media screen and (min-width: 991px) {
+  .nav-item {
+    height: 40px !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-wrap {
+    text-align: center !important;
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  #logoText {
+    text-align: center !important;
+    margin: 0 auto;
+  }
+  #navigation hr {
+    display: block;
+  }
+  #textLogo {
+    padding-bottom: 0;
+    text-align: center !important;
+  }
+}
+
+
+
+/* ---------- End responsive ----------  */
