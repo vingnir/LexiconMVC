@@ -13,7 +13,17 @@ namespace LexiconMVC.Controllers
             return View();
         }
 
-        public IActionResult Test()
+        public IActionResult Projects()
+        {
+            return View();
+        }
+
+        public IActionResult Contact()
+        {
+            return View();
+        }
+
+        public IActionResult About()
         {
             return View();
         }

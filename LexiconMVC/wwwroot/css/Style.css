@@ -7835,8 +7835,22 @@ body {
 #page-content {
   flex: 1 0 auto; }
 
+main {
+  padding: 100px 10px 20px; }
+
+main > .container-fluid, main > .container-sm, main > .container-md, main > .container-lg, main > .container-xl, main > .container-xxl {
+  padding: 2em; }
+
+main > .container-fluid h1, main > .container-sm h1, main > .container-md h1, main > .container-lg h1, main > .container-xl h1, main > .container-xxl h1, main > .container-fluid .h1, main > .container-sm .h1, main > .container-md .h1, main > .container-lg .h1, main > .container-xl .h1, main > .container-xxl .h1 {
+  text-align: center; }
+
 .navbar {
   background-color: #55595c; }
+
+#navbarCollapse span a {
+  text-decoration: none;
+  color: ghostwhite;
+  margin-right: 1em; }
 
 .etched-text {
   text-shadow: 0 2px white;

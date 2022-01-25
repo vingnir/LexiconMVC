@@ -23,10 +23,31 @@ body {
     flex: 1 0 auto;
 }
 
+main {
+    padding: 100px 10px 20px;
+}
+
+main > .container-fluid {
+    padding:2em;
+    
+    
+}
+
+main > .container-fluid h1 {
+    text-align: center;
+    
+}
 
 
 .navbar {
     background-color: #55595c;
+}
+
+#navbarCollapse span a{
+    text-decoration:none;
+    color:ghostwhite;
+    margin-right:1em;
+
 }
 
 .etched-text {

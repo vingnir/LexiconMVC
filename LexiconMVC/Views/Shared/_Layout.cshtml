@@ -16,35 +16,42 @@
 
     <header>
         <!-- Fixed navbar -->
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
             <div class="container-fluid">
-                <img class="m-0 ms-lg-3 pt-1"
+                <img class="ms-3 ms-lg-3 pt-1"
                      src="../icons/kerberos-32x32.png"
                      alt=""
                      height="32"
                      width="32" />
-                <a class="navbar-brand ps-2" href="#">Projects</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand ps-2 ms-2" href="#">
+                Projects
+                </a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="collapse navbar-collapse navbar-wrap border-0" id="navbarCollapse">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <hr class="d-lg-none" />
-                            <a class="nav-link active" href="#">
-                                Home
+                            <span class="nav-link active">
+                                <span>@Html.ActionLink("Home", "Index", "Home")</span>
                                 <span class="visually-hidden">(current)</span>
-                            </a>
+                            </span>
                         </li>
 
                         <li class="nav-item">
                             <hr class="d-lg-none" />
-                            <a class="nav-link" href="#content">Articles</a>
+                            <span class="nav-link"> @Html.ActionLink("Projects", "Projects", "Home")</span>
                         </li>
 
                         <li class="nav-item">
                             <hr class="d-lg-none" />
-                            <a class="nav-link" href="#contacts">Contact</a>
+                            <span class="nav-link"> @Html.ActionLink("Contact", "Contact", "Home")</span>
+                        </li>
+
+                        <li class="nav-item">
+                            <hr class="d-lg-none" />
+                            <span class="nav-link"> @Html.ActionLink("About", "About", "Home")</span>
                         </li>
 
                         <li class="nav-item" id="socialMediaIcons">
@@ -75,34 +82,30 @@
                             </a>
                         </li>
                     </ul>
-
                 </div>
-            </div>
+            </div> <!-- End Container -->
         </nav>
     </header>
 
-   
 
-    <!-- Begin page content -->
     <main class="flex-shrink-0">
-        <div class="container">
-            <div>
+        <!-- Begin page content -->
+        <div class="container-fluid">
 
-                @RenderBody()
-            </div>
+            @RenderBody()
         </div>
-        
     </main>
-    <footer class="footer mt-auto py-3">
-        <div class="container text-center">
-            <span class="text-muted">
-                Copyright&COPY; | Johan Ivarsson | All rights reserved
-            </span>
-        </div>
-    </footer>
+
+        <footer class="footer mt-auto py-3">
+            <div class="container text-center">
+                <span class="text-muted">
+                    Copyright&COPY; | Johan Ivarsson | All rights reserved
+                </span>
+            </div>
+        </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 
 
