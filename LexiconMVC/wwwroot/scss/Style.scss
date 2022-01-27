@@ -2,12 +2,26 @@
 
 // Place variable overrides first
 //Import custom variables
-
 @import "./customVariables";
 
-//Import custom theme
+//Import Bootstrap
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 @import "../lib/bootstrap/scss/bootstrap.scss";
 
 //Custom rules
 @import "./_custom.style.scss";
+
+//Contact form
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,100,300,700');
+@import "./_contact.scss";
+
+//About section
+@import "./_about.scss";
+
+//Index section
+@import "./_index.scss";
+
+//Projects section
+@import "./_projects.scss";
+
 

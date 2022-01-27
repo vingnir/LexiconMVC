@@ -1,0 +1,94 @@
+﻿#indexSection {
+
+    .container {
+        /* Animation fade  */
+
+        animation: fadeIn 2s;
+        -webkit-animation-duration: 2s;
+        animation-duration: 2s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+
+    .primary_btn {
+        display: inline-block;
+        color: #fff;
+        letter-spacing: 0px;
+        font-family: "Rubik", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 46px;
+        outline: none !important;
+        text-align: center;
+        cursor: pointer;
+        text-transform: uppercase;
+        border-radius: 5px;
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
+        border: double 2px transparent;
+        box-shadow: 0px 10px 30px;
+    }
+
+    .primary_btn span {
+        padding: 0 42px;
+    }
+
+    a {
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+    }
+
+    a {
+        color: #007bff;
+        text-decoration: none;
+        background-color: transparent;
+        -webkit-text-decoration-skip: objects;
+    }
+
+
+    img {
+        vertical-align: middle;
+        border-style: none;
+    }
+
+    *, ::after, ::before {
+        box-sizing: border-box;
+    }
+
+
+
+
+
+    @-webkit-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .fadeIn {
+        -webkit-animation-name: fadeIn;
+        animation-name: fadeIn;
+    }
+}
+
+@media (max-width: 1480px) {
+    .about_area .about_img img {
+        max-width: 100%;
+        height: auto;
+    }
+}
