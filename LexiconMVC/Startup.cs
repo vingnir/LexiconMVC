@@ -33,6 +33,11 @@ namespace LexiconMVC
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}"
                     );
+
+            endpoints.MapControllerRoute(
+                name: "CheckFever",
+                pattern: "CheckFever",
+                defaults: new { controller = "Doctor", action = "CheckFever" });
             });
         }
 

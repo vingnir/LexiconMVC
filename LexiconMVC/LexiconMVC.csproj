@@ -10,12 +10,26 @@
 
   <ItemGroup>
     <Folder Include="Models\" />
-    <Folder Include="wwwroot\css\" />
     <Folder Include="wwwroot\icons\" />
+	  <Folder Include="wwwroot\fonts\" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json" />   
+    <None Include="wwwroot\js\vendor\aos\aos.js" />
+    <None Include="wwwroot\js\vendor\bootstrap-icons\fonts\bootstrap-icons.woff2" />
+    <None Include="wwwroot\js\vendor\boxicons\fonts\boxicons.svg" />
+    <None Include="wwwroot\js\vendor\boxicons\fonts\boxicons.woff2" />
+    <None Include="wwwroot\js\vendor\glightbox\js\glightbox.js" />
+    <None Include="wwwroot\js\vendor\glightbox\js\glightbox.min.js" />
+    <None Include="wwwroot\js\vendor\isotope-layout\isotope.pkgd.js" />
+    <None Include="wwwroot\js\vendor\isotope-layout\isotope.pkgd.min.js" />
+    <None Include="wwwroot\js\vendor\remixicon\remixicon.less" />
+    <None Include="wwwroot\js\vendor\remixicon\remixicon.svg" />
+    <None Include="wwwroot\js\vendor\remixicon\remixicon.symbol.svg" />
+    <None Include="wwwroot\js\vendor\remixicon\remixicon.woff2" />
+    <None Include="wwwroot\js\vendor\swiper\swiper-bundle.min.js" />
+    <None Include="wwwroot\js\vendor\waypoints\noframework.waypoints.js" />
   </ItemGroup>
 
   <ItemGroup>

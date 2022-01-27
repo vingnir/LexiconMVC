@@ -1,19 +1,33 @@
 ﻿/* About section */
+
+$purple-theme: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
 #aboutSection {
     .about {
         text-align: center;
         padding: 2rem 2rem 10rem 0;
+        margin-bottom: 1em;
+        font-family: 'Nunito Sans', sans-serif !important;
+        color: black;
+        font-weight: 500;
+        opacity: 80%;
     }
 
     .title {
         font-weight: 600;
-        color: dimgray;
         font-family: 'Nunito Sans', sans-serif !important;
     }
 
     .description {
         margin: -1rem auto 2rem auto;
-        opacity: 70%;
+        opacity: 90%;
+        color: #f3f3f3;
+    }
+
+    .description-info {
+        background: $purple-theme;
+        border-radius: 26px;
+        font-size: 90%;
+        padding: 1rem;
     }
 
     .terminal {
@@ -23,7 +37,7 @@
         color: #46b5d1;
         padding: 0 1rem;
         border-radius: 4px;
-        background-color: #232323;
+        background-color: white;
         min-height: 350px;
         box-shadow: 0px 12px 36.8px 9.2px rgba(0, 0, 0, 0.1);
     }
@@ -71,8 +85,8 @@
         display: block;
         overflow-x: auto;
         padding: 0.5em;
-        background: #232323;
-        color: #46b5d1;
+        background: white;
+        color: #241010;
     }
     /* code */
     .code {
@@ -93,7 +107,7 @@
         font-size: 80%;
     }
 
-    
+
 
     .attribute {
         color: #cda869 !important;
