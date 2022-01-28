@@ -1,16 +1,42 @@
 ﻿
 @{
     ViewData["Title"] = "Check Fever";
+
 }
 
-<h1>Check Fever</h1>
 
-@if (ViewBag.Message != null){
-<p>@ViewBag.Message</p>
-}
+<section id="checkFeverSection">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col mx-auto">
+                <h3 class="text-center">Check for Fever</h3>
+                               
+            </div>
+        </div> <!-- End row-->
 
-<form asp-controllers="Doctor" asp-action="CheckFever" method="post">
 
 
 
-</form>
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <img class="mx-auto" src="~/images/fever.jpg" />
+                <form asp-controllers="Doctor" asp-action="CheckFever" method="post">
+                    <input type="radio" checked id="celsius" name="converter" value="">
+                    <label for="celsius">Celsius</label>
+                    <input type="radio" id="fahrenheit" name="converter" value="">
+
+                    <label for="fahrenheit">Fahrenheit</label>
+                    
+                    <label class="pt-2">Enter your temperature</label>
+                    <input type="text" name="temp" step="0.1" min="0" />
+                    <input class="btn-primary" type="submit" value="Check" />
+
+                </form>
+                @if(ViewBag.Message != null){
+                <p class="pt-3">@ViewBag.Message</p>
+                }
+            </div>
+        </div> <!-- End row-->
+
+    </div>  <!-- End container -->
+</section>

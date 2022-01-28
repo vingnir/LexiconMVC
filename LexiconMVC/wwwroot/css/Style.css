@@ -8375,3 +8375,14 @@ main > .container h1, main > .container .h1 {
 /*--------------------------------------------------------------
 # End Portfolio Details
 --------------------------------------------------------------*/
+/*** CheckFever ***/
+#checkFeverSection .btn-primary {
+  background: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee) !important; }
+
+#checkFeverSection img {
+  max-width: 400px;
+  margin: 0 auto; }
+
+#checkFeverSection form {
+  width: 300px;
+  margin: 0 auto; }

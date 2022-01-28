@@ -12,6 +12,8 @@ namespace LexiconMVC
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddHttpContextAccessor();
+            services.AddSession();
 
         }
 
@@ -24,8 +26,8 @@ namespace LexiconMVC
             }
 
             app.UseStaticFiles();
-
             app.UseRouting();
+            app.UseSession();
 
             app.UseEndpoints(endpoints =>
             {
