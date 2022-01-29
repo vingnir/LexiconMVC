@@ -1,13 +1,4 @@
-﻿// utilities
-var get = function (selector, scope) {
-    scope = scope ? scope : document;
-    return scope.querySelector(selector);
-};
-
-var getAll = function (selector, scope) {
-    scope = scope ? scope : document;
-    return scope.querySelectorAll(selector);
-};
+﻿
 
 // setup typewriter effect in the terminal demo
 if (document.getElementsByClassName('demo').length > 0) {
@@ -22,7 +13,7 @@ if (document.getElementsByClassName('demo').length > 0) {
             - Location = Gamlestaden, Gothenburg
             - Interests = Dogs, plants and coding
             - Languages = C#, JS, PHP, Java, SQL
-            - Tech = HTML, CSS, SASS, XML, JSON ...
+            - Tech = HTML, CSS, SASS, XML, CCNA, Linux ...
             - Creative solutions? true
             - Fullstack = true`;
     var speed = 60;
@@ -35,5 +26,5 @@ if (document.getElementsByClassName('demo').length > 0) {
         }
     }
 
-    setTimeout(typeItOut, 1800);
+    setTimeout(typeItOut, 1400);
 }

@@ -21,10 +21,11 @@
     padding: 8px 20px;
     border-radius: 50px;
     font-family: "Poppins", sans-serif;
+    //font-family: "Raleway", sans-serif;
 }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-    background: #47b2e4;
+    background: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
     color: #fff;
 }
 

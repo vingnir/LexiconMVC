@@ -20,11 +20,12 @@ namespace LexiconMVC.Controllers
             return View();
         }
 
+        
         [HttpPost]
-        public IActionResult CheckFever(string temp)
+        public IActionResult CheckFever(string temp, string tempScale)
         {
             
-            ViewBag.Message = DoctorModel.CheckIfFever(temp);
+            ViewBag.Message = DoctorModel.CheckIfFever(temp, tempScale);
             
             return View();
         }
@@ -41,5 +42,21 @@ namespace LexiconMVC.Controllers
             ViewBag.Message = HttpContext.Session.GetString("Test");
             return View();
         }
+
+        public IActionResult GuessingGame()
+        {
+            return View();
+        }
+
+
+        [HttpPost]
+        public IActionResult GuessingGame(int guess)
+        {
+
+            //ViewBag.Message = DoctorModel.CheckIfFever();
+
+            return View();
+        }
+
     }
 }

@@ -219,7 +219,11 @@ $btn-blue: #4458dc;
     /********* IMAGE *********/
     #contactImage {
         background-image: url(../images/developer.jpg);
-        border-radius: 5px;
+        border-radius: 5%;
+        min-height:300px;
+        height:70%;
+        width:65%;
+        margin:4rem auto;
     }
     // Forms style
     #contactForm {

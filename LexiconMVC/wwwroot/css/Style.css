@@ -7837,7 +7837,8 @@ textarea.form-control-lg {
 /* ---------- Global ---------- */
 html,
 body {
-  height: 100%; }
+  height: 100%;
+  background-color: white; }
 
 /* hide scrollbar but allow scrolling */
 body {
@@ -7861,21 +7862,19 @@ body::-webkit-scrollbar {
 /* ---------- End Global ---------- */
 /* ---------- Header Nav ---------- */
 .navbar {
-  background-color: #f1f1f1; }
-
-.navbar-brand {
-  color: black !important; }
+  background-color: white; }
 
 .navbar-toggler:focus {
   box-shadow: none !important; }
 
-#navbarCollapse span a {
+#navbarCollapse a {
   text-decoration: none;
   color: black;
   margin-right: 1em; }
 
 .sm-icons {
-  padding: 0.5rem; }
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem; }
 
 /* ---------- End Header Nav ---------- */
 /* ---------- Main ---------- */
@@ -7886,6 +7885,9 @@ main {
 main > .container h1, main > .container .h1 {
   text-align: center;
   padding-bottom: 1rem; }
+
+.navbar-collapse {
+  background: white; }
 
 /* ---------- End Main ---------- */
 /* ---------- Footer ---------- */
@@ -7914,6 +7916,8 @@ main > .container h1, main > .container .h1 {
     text-align: center !important;
     width: 200px;
     margin: 0 auto; }
+  .navbar-collapse hr {
+    opacity: 10%; }
   #logoText {
     text-align: center !important;
     margin: 0 auto; }
@@ -8067,7 +8071,11 @@ main > .container h1, main > .container .h1 {
     padding: 0; }
   #contactSection #contactImage {
     background-image: url(../images/developer.jpg);
-    border-radius: 5px; }
+    border-radius: 5%;
+    min-height: 300px;
+    height: 70%;
+    width: 65%;
+    margin: 4rem auto; }
   #contactSection #contactForm .error {
     color: red;
     font-size: 12px; }
@@ -8108,7 +8116,7 @@ main > .container h1, main > .container .h1 {
     font-weight: 600;
     font-family: 'Nunito Sans', sans-serif !important; }
   #aboutSection .description {
-    margin: -1rem auto 2rem auto;
+    margin: 4rem auto 2rem auto;
     opacity: 90%;
     color: #f3f3f3; }
   #aboutSection .description-info {
@@ -8264,7 +8272,7 @@ main > .container h1, main > .container .h1 {
   font-family: "Poppins", sans-serif; }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  background: #47b2e4;
+  background: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
   color: #fff; }
 
 .portfolio .portfolio-item {
@@ -8378,10 +8386,6 @@ main > .container h1, main > .container .h1 {
 /*** CheckFever ***/
 #checkFeverSection .btn-primary {
   background: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee) !important; }
-
-#checkFeverSection img {
-  max-width: 400px;
-  margin: 0 auto; }
 
 #checkFeverSection form {
   width: 300px;
