@@ -42,7 +42,6 @@ namespace LexiconMVC.Controllers
                 string prevHighScore = Regex.Match(HttpContext.Request.Cookies["HighScore"], @"\d+").Value;
                 int prevScore = Int32.Parse(prevHighScore); 
 
-
                 if (prevScore == 0 || prevScore > highScore)
                 {
                     HttpContext.Response.Cookies.Append("HighScore", $"{highScore} \nDate: {DateTime.Now}");

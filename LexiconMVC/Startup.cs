@@ -50,7 +50,7 @@ namespace LexiconMVC
                 endpoints.MapControllerRoute(
                 name: "Portfolio",
                 pattern: "Portfolio",
-                defaults: new { controller = "Portfolio", action = "Index" });
+                defaults: new { controller = "Portfolio", action = "PawsSite" });
 
             });
         }

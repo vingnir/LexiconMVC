@@ -1,7 +1,64 @@
 ﻿
 @{
-    ViewData["Title"] = "PawsSite";
+    ViewData["Title"] = "Paws";
 }
 
-<h1>PawsSite</h1>
+<div id="portfolioRecruitStatSection">
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+        <div class="container">
+            <ol>
+                <li><a href="#">@Html.ActionLink("Gallery", "Projects", "Home")</a></li>
+                <li>Portfolio Details</li>
+            </ol>
+            <h2>Portfolio Details</h2>
 
+        </div>
+    </section><!-- End Breadcrumbs -->
+    <!-- ======= Portfolio Details Section ======= -->
+    <section class="portfolio-details">
+        <div class="container">
+
+            <div class="row gy-4">
+
+                <div class="col-lg-8">
+                    <div class="portfolio-details-slider swiper">
+                        <div class="swiper-wrapper align-items-center">
+
+                            <div class="swiper-slide">
+                                <img src="/images/portfolio/vingnirResponsiveSmall.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="/images/portfolio/vingnirResponsive.jpg" alt="">
+                            </div>                  
+
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="portfolio-info">
+                        <h3>Project information</h3>
+                        <ul>
+                            <li><strong>Category</strong>: Web design</li>
+                            <li><strong>Client</strong>: Training purpose</li>
+                            <li><strong>Project date</strong>: 30 Jan, 2022</li>
+                            <li><strong>Project URL</strong>: <a href="https://www.vingnir.se">www.vingnir.se</a></li>
+                            <li><strong>GitHub</strong>: <a href="https://github.com/vingnir/LexiconPureBootstrap">www.github.com/vingnir</a></li>
+                        </ul>
+                    </div>
+                    <div class="portfolio-description">
+                        <h2>Bootstrap 5 Training project</h2>
+                        <p>
+                            Fully responsive frontend project for Lexicon Education made with Bootstrap 5 and SASS
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+</div>
+<!-- End Portfolio Details Section -->
