@@ -7864,6 +7864,9 @@ body::-webkit-scrollbar {
 .navbar {
   background-color: white; }
 
+.navbar span a:hover {
+  color: white; }
+
 .navbar-toggler:focus {
   box-shadow: none !important; }
 
@@ -7872,9 +7875,20 @@ body::-webkit-scrollbar {
   color: black;
   margin-right: 1em; }
 
+#navbarCollapse a:hover {
+  color: #854fee; }
+
+#navbarCollapse .dropdown a:active {
+  color: white; }
+
 .sm-icons {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem; }
+
+.dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee); }
 
 /* ---------- End Header Nav ---------- */
 /* ---------- Main ---------- */
@@ -8383,10 +8397,24 @@ main > .container h1, main > .container .h1 {
 /*--------------------------------------------------------------
 # End Portfolio Details
 --------------------------------------------------------------*/
+#breadcrumbs li a {
+  text-decoration: none;
+  color: #854fee; }
+
 /*** CheckFever ***/
 #checkFeverSection .btn-primary {
   background: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee) !important; }
 
 #checkFeverSection form {
+  width: 300px;
+  margin: 0 auto; }
+
+#guessingGameSection .btn-primary {
+  background: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee) !important; }
+
+#guessingGameSection input[type=number] {
+  width: 200px; }
+
+#guessingGameSection form {
   width: 300px;
   margin: 0 auto; }

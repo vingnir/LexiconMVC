@@ -14,6 +14,7 @@
 ***/
 
 /* ---------- Global ---------- */
+$purple-theme: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
 
 html,
 body {
@@ -52,6 +53,10 @@ body::-webkit-scrollbar {
     background-color:white;
 }
 
+.navbar span a:hover {
+    color: white;
+}
+
 .navbar-toggler:focus {
     box-shadow: none !important;
 }
@@ -62,32 +67,44 @@ body::-webkit-scrollbar {
         margin-right: 1em;
     }
 
-
-.sm-icons {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+#navbarCollapse a:hover {
+    color: #854fee;
 }
+
+#navbarCollapse .dropdown a:active {
+    color: white;
+}
+
+    .sm-icons {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .dropdown-item:active {
+        color: #fff;
+        text-decoration: none;
+        background: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
+    }
     /* ---------- End Header Nav ---------- */
     /* ---------- Main ---------- */
 
 
 
-main {
-    padding: 100px 10px 20px;
-    font-family: 'Nunito Sans', sans-serif;
-}
+    main {
+        padding: 100px 10px 20px;
+        font-family: 'Nunito Sans', sans-serif;
+    }
 
-    
+
 
     main > .container h1 {
         text-align: center;
-        padding-bottom:1rem;
+        padding-bottom: 1rem;
     }
 
-    .navbar-collapse{
-        background:white;
+    .navbar-collapse {
+        background: white;
     }
-
     /* ---------- End Main ---------- */
     /* ---------- Footer ---------- */
     .footer-menu a {
@@ -123,8 +140,8 @@ main {
             margin: 0 auto;
         }
 
-        .navbar-collapse hr{
-            opacity:10%;
+        .navbar-collapse hr {
+            opacity: 10%;
         }
 
         #logoText {

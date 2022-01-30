@@ -30,33 +30,5 @@ namespace LexiconMVC.Controllers
             return View();
         }
 
-
-        public IActionResult SetSession()
-        {
-            HttpContext.Session.SetString("Test", "test session");
-            return View();
-        }
-
-        public IActionResult GetSession()
-        {
-            ViewBag.Message = HttpContext.Session.GetString("Test");
-            return View();
-        }
-
-        public IActionResult GuessingGame()
-        {
-            return View();
-        }
-
-
-        [HttpPost]
-        public IActionResult GuessingGame(int guess)
-        {
-
-            //ViewBag.Message = DoctorModel.CheckIfFever();
-
-            return View();
-        }
-
     }
 }

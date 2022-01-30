@@ -30,9 +30,19 @@
 @import "../js/vendor/glightbox/css/glightbox.css";
 @import "../js/vendor/swiper/swiper-bundle.min.css";
 
+//Project Portfolio details section
+@import "./_portfolioDetails.scss";
+
 //Doctor section
 /*** CheckFever ***/
 @import "./_checkFever.scss";
+
+//*** Game section ***
+
+//Guessing Game
+@import "./_guessingGame.scss";
+
+
 
 
 

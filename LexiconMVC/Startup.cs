@@ -14,7 +14,8 @@ namespace LexiconMVC
             services.AddMvc();
             services.AddHttpContextAccessor();
             services.AddSession();
-            
+            services.AddDistributedMemoryCache(); // Adds a default in-memory implementation of IDistributedCache
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -36,13 +37,22 @@ namespace LexiconMVC
                     pattern: "{controller=Home}/{action=Index}/{id?}"
                     );
 
-            endpoints.MapControllerRoute(
+                endpoints.MapControllerRoute(
                 name: "CheckFever",
                 pattern: "CheckFever",
                 defaults: new { controller = "Doctor", action = "CheckFever" });
+
+                endpoints.MapControllerRoute(
+                name: "GuessingGame",
+                pattern: "GuessingGame",
+                defaults: new { controller = "Game", action = "GuessingGame" });
+
+                endpoints.MapControllerRoute(
+                name: "Portfolio",
+                pattern: "Portfolio",
+                defaults: new { controller = "Portfolio", action = "Index" });
+
             });
         }
-
-
     }
 }

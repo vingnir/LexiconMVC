@@ -25,7 +25,7 @@
                      alt=""
                      height="32"
                      width="32" />
-               
+
                 <a class="navbar-brand ps-2 ms-2" href="#">
                     <span>Johan Daniel |</span> @ViewBag.Title
 
@@ -38,6 +38,7 @@
                         <li class="nav-item">
                             <hr class="d-lg-none" />
                             <span class="nav-link active">
+
                                 @Html.ActionLink("Home", "Index", "Home")
                             </span>
                             <span class="visually-hidden">(current)</span>
@@ -68,10 +69,12 @@
                                 Extras
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item disabled" href="#"><span class="text-center text-black-50">Medical</span></a></li>
                                 <li><span class="dropdown-item"> @Html.ActionLink("Check Fever", "CheckFever", "Doctor")</span></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
+
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item disabled" href="#"><span class="text-center text-black-50">Games</span></a></li>
+                                <li><span class="dropdown-item"> @Html.ActionLink("Guessing Game", "GuessingGame", "Game")</span></li>                              
                             </ul>
                         </li>
 
@@ -133,6 +136,6 @@
     <script type="text/javascript" src="~/js/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script type="text/javascript" src="~/js/vendor/aos/aos.js"></script>
     <script type="text/javascript" src="~/js/portfolio.js"></script>
-
+    
 </body>
 </html>

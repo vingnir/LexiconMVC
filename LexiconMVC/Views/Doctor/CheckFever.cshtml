@@ -1,6 +1,6 @@
 ﻿
 @{
-    ViewData["Title"] = "Check Fever";
+    ViewData["Title"] = "Medical";
 
 }
 
@@ -9,13 +9,9 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col mx-auto">
-                <div class="text-center h3">Check for Fever <img src="~/lib/bootstrap/icons/thermometer-high.svg" height="25" width="25"/> </div>
-                               
+                <div class="text-center h3">Check for Fever <img src="~/lib/bootstrap/icons/thermometer-high.svg" height="25" width="25"/> </div>                            
             </div>
         </div> <!-- End row-->
-
-
-
 
         <div class="row justify-content-center">
             <div class="col col-md-4">
@@ -24,20 +20,15 @@
                     <input type="radio" checked id="celsius" name="tempScale" value="°C">
                     <label for="celsius">Celsius</label>
                     <input type="radio" id="fahrenheit" name="tempScale" value="°F">
-
                     <label for="fahrenheit">Fahrenheit</label>
-
                     <label class="pt-2">Enter your temperature</label>
                     <input type="text" name="temp" inputmode="numeric" pattern="[-+]?[0-9]*[.,]?[0-9]+" required placeholder="ex. 36,5" />
                     <input class="btn-primary" type="submit" value="Check" />
-
-                </form>
-                
+                </form>             
                 @if(ViewBag.Message != null){
                 <p class="pt-3">@ViewBag.Message</p>
                 }
             </div>
         </div> <!-- End row-->
-
     </div>  <!-- End container -->
 </section>
