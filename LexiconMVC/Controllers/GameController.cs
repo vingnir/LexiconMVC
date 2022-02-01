@@ -9,14 +9,10 @@ namespace LexiconMVC.Controllers
     public class GameController : Controller
     {
         public IActionResult GuessingGame()
-        {
-
-            CookieOptions cookieOptions = new CookieOptions();
-            cookieOptions.Expires = new DateTimeOffset(DateTime.Now.AddDays(7));
-
+        {          
             if (!HttpContext.Request.Cookies.ContainsKey("HighScore"))
             {
-                HttpContext.Response.Cookies.Append("HighScore", $"-1 \nDate: {DateTime.Now}", cookieOptions);
+                HttpContext.Response.Cookies.Append("HighScore", "");
             }
             int Guesses = 0;
             int randomNum = GameModel.GetRandomNumber();
@@ -31,7 +27,7 @@ namespace LexiconMVC.Controllers
         {
             int? random = HttpContext.Session.GetInt32("RandomNum");
             if (random == null) { HttpContext.Session.SetInt32("RandomNum", GameModel.GetRandomNumber()); }
-            bool result = GameModel.CompareGuesses(guess, random);
+            var result = GameModel.CompareGuesses(guess, random);
 
             if (result)
             {
@@ -58,7 +54,7 @@ namespace LexiconMVC.Controllers
                 ViewBag.HighScore = HttpContext.Request.Cookies["HighScore"];
             }
 
-            ViewBag.Random = "after cleaning = " + HttpContext.Session.GetInt32("RandomNum");
+            
 
             return View();
         }
