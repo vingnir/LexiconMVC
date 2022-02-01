@@ -1,15 +1,11 @@
-﻿using Microsoft.AspNetCore.Http;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System;
 
 namespace LexiconMVC.Models
 {
     public class GameModel
     {
-        public static bool CompareGuesses(int guess, int? random) 
-        {        
+        public static bool CompareGuesses(int guess, int? random)
+        {
             return guess == random;
         }
 
@@ -20,6 +16,6 @@ namespace LexiconMVC.Models
             return randomNumber;
         }
 
-       
+
     }
 }

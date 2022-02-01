@@ -1,10 +1,5 @@
 ﻿using LexiconMVC.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace LexiconMVC.Controllers
 {
@@ -20,13 +15,13 @@ namespace LexiconMVC.Controllers
             return View();
         }
 
-        
+
         [HttpPost]
         public IActionResult CheckFever(string temp, string tempScale)
         {
-            
+
             ViewBag.Message = DoctorModel.CheckIfFever(temp, tempScale);
-            
+
             return View();
         }
 
