@@ -37,16 +37,7 @@ namespace LexiconMVC
                     pattern: "{controller=Home}/{action=Index}/{id?}"
                     );
 
-                endpoints.MapControllerRoute(
-                name: "CheckFever",
-                pattern: "CheckFever",
-                defaults: new { controller = "Doctor", action = "CheckFever" });
-
-                endpoints.MapControllerRoute(
-                name: "GuessingGame",
-                pattern: "GuessingGame",
-                defaults: new { controller = "Game", action = "GuessingGame" });
-
+                
                 endpoints.MapControllerRoute(
                 name: "Portfolio",
                 pattern: "Portfolio",
