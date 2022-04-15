@@ -11,6 +11,9 @@
 //Custom rules
 @import "./_custom.style.scss";
 
+//Shared layout
+@import "./_layout.scss";
+
 //Contact form
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,100,300,700');
 @import "./_contact.scss";
@@ -33,14 +36,6 @@
 //Project Portfolio details section
 @import "./_portfolioDetails.scss";
 
-//Doctor section
-/*** CheckFever ***/
-@import "./_checkFever.scss";
-
-//*** Game section ***
-
-//Guessing Game
-@import "./_guessingGame.scss";
 
 
 
